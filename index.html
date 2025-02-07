@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6980885388960903"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="controls">
+          <div class="brand-container">ZaFinance</div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <!---->
+              <li class="highlight"><a href="about.html">About</a></li>
+              <li><a href="#calculator">Calculator</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="menu-toggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <button class="btn">try it out</button>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-content">
+        <p class="note">Improve your financial calculating</p>
+        <h1 class="title">Savings calculator for daily use</h1>
+        <div class="hero-description">
+          <p>
+            Plan your daily expenses and savings with our easy-to-use savings
+            calculator. Track your progress and reach your financial goals
+            effortlessly.
+          </p>
+        </div>
+        </div>
+      
+        <div class="hero-bg-container">
+          <button class="bttn">Try it out</button>
+          <img
+            class="hero-img"
+            src="img/hero.jpg"
+            alt="A person calculating savings with a calculator and a notepad filled with financial notes on a white desk."
+          />
+        </div>
+      </section>
+        <main class="main-section">
+          <div class="section-title">
+            <h2 class="main-title">Why Compound Interest Matters?</h2>
+            <p class="main-description">
+              Plan your daily expenses and savings with our easy-to-use savings
+              <br />
+              calculator. Track your progress and reach your financial goals
+              effortlessly.
+            </p>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="card-content">
+                <h1 class="content-title">Easy to use</h1>
+                <p class="content-des">
+                  User-friendly interface for quick calculations
+                </p>
+              </div>
+              <div class="card-child-container">
+                <div class="card-child">
+                  <img class="first-card-child-img"
+   src="img/happy-person-with-calculator.jpg"                 
+                    alt="A person using a laptop with a cheerful expression while engaging with a digital calculator displaying numerical values."
+                  />
+                  <div class="child-title">
+                    <h2 class="child-title-h2">initial Deposit</h2>
+                    <div class="placeholder"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h1 class="content">Accurate results</h1>
+                <p class="content-des">
+                  User-friendly interface for quick calculations
+                </p>
+              </div>
+              <div class="card-child-container1">
+                <div class="card-child1">
+                  <img
+                    class="first-icon"
+                    src="img/first-icon.svg"
+                    alt="Award icon"
+                  />
+                  <img
+                    class="second-icon"
+                    src="img/second-icon.svg"
+                    alt="stats icon"
+                  />
+                  <div class="placeholder1"></div>
+                  <div class="placeholder2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h2 class="content">Secure</h2>
+                <p class="content-des">
+                  Your data is not stored anywhere! Once you switch the browser
+                  tab your cache will be removed as well! Amazing, yes?
+                </p>
+              </div>
+              <div class="card-child-container2">
+                <img
+                  class="third-icon"
+                  src="img/third-icon.svg"
+                  alt="security-icon"
+                />
+
+                <div class="card-child2">
+                  <h2 class="child-title">Data Security</h2>
+                  <div class="placeholder3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h1 class="content">No log in!</h1>
+                <p class="content-des">
+                  User-friendly interface for quick <br> calculations
+                </p>
+              </div>
+              <div class="card-child-container3">
+                <div class="card-child3">
+                  <div class="card-child-content">
+                    <img src="img/smiling-person.jpg" alt="A smiling individual with short hair posing for a profile photo against a plain background" />
+                    <h2 class="child-title">Log in</h2>
+                  </div>
+                  <div class="placholder4"></div>
+                  <div class="placholder5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </main>
+        <div class="title-container">
+          <h2 class="title">Compound Interest Calculator</h2>
+          <p class="title-des">Enter your savings details and see how your money will grow over time.  <br> Discover how much you can save and what monthly withdrawals you can expect!</p>
+        </div>
+        <section id="calculator" class="calculator-section">
+          <form onsubmit="event.preventDefault(); calculateInterest();">
+            <label for="initialDeposit">Initial Deposit</label>
+            <div class="input-container">
+              <input type="number" id="initialDeposit" placeholder="Enter initial deposit" required>
+            </div>
+      
+            <label for="monthlyContribution">Contribution Amount</label>
+            <div class="input-container">
+              <input type="number" id="monthlyContribution" placeholder="Enter contribution amount" required>
+            </div>
+      
+            <label>Frequency</label>
+            <div class="radio-group">
+              <input type="radio" id="monthly" name="frequency" value="monthly" required>
+              <label for="monthly">Monthly</label>
+      
+              <input type="radio" id="quarterly" name="frequency" value="quarterly">
+              <label for="quarterly">Quarterly</label>
+      
+              <input type="radio" id="annually" name="frequency" value="annually">
+              <label for="annually">Annually</label>
+            </div>
+      
+            <label for="interestRate">Interest Rate</label>
+            <div class="percentage-container">
+              <input type="number" id="interestRate" placeholder="Enter interest rate" step="0.01" required>
+            </div>
+      
+            <label for="years">Number of Years</label>
+            <div class="slider-container">
+              <input type="range" id="years" class="years-slider" min="1" max="30" value="5">
+              <span id="years-value" class="years-text">5</span>
+            </div>
+      
+            <button type="submit">Calculate</button>
+          </form>
+      
+          <div id="result" class="result" style="display: none;">
+            <div class="result-card">
+              <div class="card-content">
+                <h2 class="result-title">Your Total</h2>
+                <p class="result-value" id="totalValue">$0.00</p>
+                <div class="result-row">
+                  <div class="result-col">
+                    <p>Interest Earned: <span id="interestEarned">$0.00</span></p>
+                  </div>
+                  <div class="result-col">
+                    <p>Total Contributions: <span id="totalContributions">$0.00</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!-- Results will be displayed here -->
+          </div>
+        </section>
+        <footer class="footer-section">
+          <hr />
+          <div class="brand-container">ZaFinance</div>
+          <div class="text-center">
+            <p>Hope to see you again :)</p>
+          </div>
+          <div class="end-text">
+            <a href="tel:+12 323484343" class="phone"><i class="fa-solid fa-phone"></i>+12 323484343</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
